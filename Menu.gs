@@ -12,7 +12,9 @@ function onOpen() {
                  )
       .addToUi();
 }
-
+function sheetName() {
+  return SpreadsheetApp.getActiveSpreadsheet().getActiveSheet().getName();
+}
 function brainstormApproval() {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
  // ss.setActiveSheet(ss.getSheetByName("MASTER"));
